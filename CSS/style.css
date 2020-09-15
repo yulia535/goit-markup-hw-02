@@ -29,7 +29,12 @@ body{
 .logo {
     font-family: var(--secondary-font);
     color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
+
 .logo-accent {
     color: var(--accent-color);
 }
@@ -44,6 +49,10 @@ body{
   .nav-link:focus {
       color: var(--accent-color);
   }
+  .nav-list .link.active {
+    color: var(--accent-color);
+  }
+
   .address-link-header {
     font-weight: 500;
     font-size: 14px;
@@ -56,7 +65,12 @@ body{
       color: var(--accent-color);
   }
 
+
+
 /* hero section*/
+.hero {
+    background-color: #2F303A;
+}
 
 .hero-title {
     font-weight: 900;
@@ -65,8 +79,8 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--primary-title-color)
-    /*var(--secondary-title-color);*/
+    color: var(--secondary-title-color);
+    
 }
 .modal-button {
     font-family: inherit;
@@ -124,13 +138,18 @@ body{
     color: var(--primary-text-color);
 }
 /*footer*/
+footer {
+    background-color: #2F303A;
+} 
+.logo.footer {
+    color: var(--secondary-title-color);
+}
 .location-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;  
-    color: var(--primary-text-color);
-    /*var(--secondary-title-color);*/
+    color: var(--secondary-title-color);
 }
 
 .contact-link {
@@ -138,8 +157,7 @@ body{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;  
-    color: var(--primary-text-color);
-    /* var(--secondary-text-color)*/
+    color: var(--secondary-text-color);
 }
 
 /*portfolio page*/
